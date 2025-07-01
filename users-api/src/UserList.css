@@ -1,0 +1,13 @@
+.user-list {
+  text-align: center;
+  padding: 20px;
+}
+
+.user-card {
+  background-color: #f0f0f0;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
