@@ -1,13 +1,54 @@
 .user-list {
+  background: linear-gradient(to bottom right, #dbeafe, #e0f2fe);
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  padding: 20px;
+}
+
+.user-list h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #1e3a8a;
+}
+
+.user-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .user-card {
-  background-color: #f0f0f0;
-  margin: 10px auto;
-  padding: 15px;
-  border-radius: 8px;
-  max-width: 400px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: left;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  background-color: #f1f5f9;
+}
+
+.user-card h3 {
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.user-card p {
+  margin: 5px 0;
+  color: #334155;
+}
+
+.user-card a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.user-card a:hover {
+  text-decoration: underline;
 }

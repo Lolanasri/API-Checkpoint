@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './UserList.css'; // Pour le style (crée-le ensuite)
+import './UserList.css';
 
 const UserList = () => {
   const [listOfUser, setListOfUser] = useState([]);
@@ -18,17 +18,17 @@ const UserList = () => {
 
   return (
     <div className="user-list">
-      <h2>Liste des utilisateurs</h2>
-      <ul>
+      <h1>🌐 Liste des Utilisateurs</h1>
+      <div className="user-container">
         {listOfUser.map((user) => (
-          <li key={user.id} className="user-card">
+          <div key={user.id} className="user-card">
             <h3>{user.name}</h3>
             <p><strong>Email:</strong> {user.email}</p>
-            <p><strong>Phone:</strong> {user.phone}</p>
-            <p><strong>Website:</strong> {user.website}</p>
-          </li>
+            <p><strong>Téléphone:</strong> {user.phone}</p>
+            <p><strong>Site web:</strong> <a href={`http://${user.website}`} target="_blank" rel="noreferrer">{user.website}</a></p>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
